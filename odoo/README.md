@@ -14,7 +14,7 @@ The debug mode can be enabled or disabled through the query param in the URL:
 - `?debug=tests` -- enable debug mode with tests assets
 
 # Try it out
-<a href="https://idx.google.com/new?template=https://github.com/project-idx/community-templates/tree/main/odoo">
+<a href="https://idx.google.com/new?template=https://github.com/rvjaraj/community-templates/tree/main/odoo">
   <picture>
     <source
       media="(prefers-color-scheme: dark)"

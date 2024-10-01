@@ -42,6 +42,8 @@
       printf "/.idx/odoo\n/.idx/odoo-data" > ".gitignore"
 
       git clone https://github.com/odoo/odoo.git --single-branch --branch ${version}.0 --depth 1 .idx/.data/odoo
+      
+      git clone https://github.com/OCA/l10n-ecuador.git --single-branch --branch ${version}.0 --depth 1 .idx/.data/l10n-ecuador
 
       sed -i                                                                                  \
           -e "s/\$WS_NAME/$WS_NAME/g"                                                         \
