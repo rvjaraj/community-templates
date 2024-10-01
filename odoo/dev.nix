@@ -27,6 +27,7 @@
       };
     };
     # Workspace lifecycle hooks
+    # agregar el repor l10n-ecuador
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
@@ -39,7 +40,8 @@
           odoo-bin --save --stop-after-init
           mv ../.odoorc odoo.conf
           sed -i                                                                 \
-              -e "/^addons_path =/ s/\$/,\/home\/user\/$WS_NAME\/custom_addons/" \
+              -e "/^addons_path =/ s/\$/,\/home\/user\/test1\/custom_addons,\/home\/user\/test1\/.idx\/.data\/l10n-ecuador/" \
+
               -e "s/.local\/share\/Odoo/$WS_NAME\/.idx\/.data\/odoo-data/g"      \
               odoo.conf
         '';
